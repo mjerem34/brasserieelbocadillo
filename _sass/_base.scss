@@ -72,6 +72,7 @@ aside {
 .navbar-default {
     background-color: white;
     border-color: rgba($theme-dark, .5);
+    min-height: 100px;
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
@@ -88,6 +89,7 @@ aside {
         > li {
             > a,
             > a:focus {
+                line-height: 70px;
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
@@ -126,7 +128,7 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
+            background-color: $theme-dark;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
@@ -138,7 +140,6 @@ aside {
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
                 }
