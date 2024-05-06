@@ -1,7 +1,7 @@
 # Site settings
 title: Brasserie El Bocadillo
 email: brasserieelbocadillo@gmail.com
-phone: 0660258441
+phone: '06 60 28 84 41'
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: '/'
 url: 'https://brasserieelbocadillo.fr'
