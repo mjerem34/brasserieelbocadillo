@@ -1,0 +1,24 @@
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <p>{{ site.popup_message }}</p>
+    <button class="close-btn" onclick="closePopup()">Fermer</button>
+  </div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var endDate = new Date('{{ site.popup_end_date }}');
+  var currentDate = new Date();
+
+  if (currentDate <= endDate) {
+    showPopup();
+  }
+});
+
+function showPopup() {
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
