@@ -1,5 +1,15 @@
-<div style="bottom: 0; left: 0; width: 100%; background-color: #222222; color: white; text-align: center; padding: 10px;">
+<footer style="bottom: 0; left: 0; width: 100%; background-color: #222222; color: white; text-align: center; padding: 10px;" itemscope itemtype="http://schema.org/Restaurant">
     <p style="font-size: 12px;">
-      Tous droits réservés S.A.S Laurel {{ site.time | date: '%Y' }} | Siret : 97795547500016 | RCS : Beziers B 977 955 475 | Fièrement propulsé par Github | Réalisation <a href="https://mjerem34.github.io/">Jeremy Montesinos</a>
+      Tous droits réservés S.A.S Laurel <span itemprop="copyrightYear">{{ site.time | date: '%Y' }}</span> |
+      <span itemprop="name">Brasserie El Bocadillo</span>,
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="addressLocality">Béziers</span>
+      </span> |
+      Siret : <span itemprop="identifier">97795547500016</span> |
+      RCS : Beziers B 977 955 475 |
+      Fièrement propulsé par Github |
+      Réalisation <a href="https://mjerem34.github.io/" rel="noopener" target="_blank" itemprop="creator" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jeremy Montesinos - Développeur Web</span></a>
     </p>
-</div>
+    <meta itemprop="servesCuisine" content="Française, Brasserie">
+    <meta itemprop="priceRange" content="€€">
+</footer>

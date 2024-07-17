@@ -1,57 +1,59 @@
-<section class="bg-primary" id="about">
+<section class="bg-primary" id="about" itemscope itemtype="http://schema.org/Restaurant">
   <div class="container">
-      <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-              <h2 class="section-heading">Nos Services Gourmands</h2>
-              <hr class="light">
-              <p class="text-faded">Offrez à vos événements une touche de raffinement avec nos services traiteur : buffets dinatoires élaborés, options de livraison et plats à emporter, conçus pour transformer chaque occasion en un festin mémorable à la Brasserie El Bocadillo. De plus, profitez de notre espace privatisable en soirée, idéal pour vos anniversaires, repas d'entreprise et autres célébrations privées, assurant une ambiance exclusive et personnalisée.</p>
-          </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading" itemprop="name">Nos Services Gourmands à la Brasserie El Bocadillo</h2>
+        <hr class="light">
+        <p class="text-faded" itemprop="description">Offrez à vos événements une touche de raffinement avec nos services traiteur à Béziers : buffets dinatoires élaborés, options de livraison et plats à emporter, fusion de cuisine espagnole et française, conçus pour transformer chaque occasion en un festin mémorable à la Brasserie El Bocadillo. De plus, profitez de notre espace privatisable en soirée, idéal pour vos anniversaires, repas d'entreprise et autres célébrations privées, assurant une ambiance exclusive et personnalisée.</p>
       </div>
+    </div>
   </div>
   <div class="container">
-      <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="service-box">
-                  <i class="fa fa-4x fa-utensils wow bounceIn text-white"></i>
-                  <h3>Buffets Dinatoires</h3>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="service-box">
-                  <i class="fa fa-4x fa-plate-wheat wow bounceIn text-white" data-wow-delay=".3s"></i>
-                  <h3>Traiteur</h3>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="service-box">
-                  <i class="fa fa-4x fa-solid fa-bag-shopping wow bounceIn text-white" data-wow-delay=".1s"></i>
-                  <h3>À Emporter</h3>
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-              <div class="service-box">
-                  <i class="fa fa-4x fa-truck-fast wow bounceIn text-white" data-wow-delay=".2s"></i>
-                  <h3>Livraison</h3>
-              </div>
-          </div>
+    <div class="row" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+      <div class="col-lg-3 col-md-6 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+        <div class="service-box">
+          <i class="fa fa-4x fa-utensils wow bounceIn text-white"></i>
+          <h3 itemprop="name">Buffets Dinatoires</h3>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 text-center"></div>
-          <div class="col-lg-4 text-center">
-              <div class="service-box">
-                  <i class="fa fa-4x fa-martini-glass wow bounceIn text-white" data-wow-delay=".2s"></i>
-                  <h3>Privatisation</h3>
-              </div>
-          </div>
       </div>
+      <div class="col-lg-3 col-md-6 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+        <div class="service-box">
+          <i class="fa fa-4x fa-plate-wheat wow bounceIn text-white" data-wow-delay=".3s"></i>
+          <h3 itemprop="name">Traiteur</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+        <div class="service-box">
+          <i class="fa fa-4x fa-solid fa-bag-shopping wow bounceIn text-white" data-wow-delay=".1s"></i>
+          <h3 itemprop="name">À Emporter</h3>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+        <div class="service-box">
+          <i class="fa fa-4x fa-truck-fast wow bounceIn text-white" data-wow-delay=".2s"></i>
+          <h3 itemprop="name">Livraison</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 text-center"></div>
+      <div class="col-lg-4 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+        <div class="service-box">
+          <i class="fa fa-4x fa-martini-glass wow bounceIn text-white" data-wow-delay=".2s"></i>
+          <h3 itemprop="name">Privatisation</h3>
+        </div>
+      </div>
+    </div>
   </div>
   <br>
   <br>
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 text-center">
-        <a href="#contact" class="btn btn-default btn-xl page-scroll">Nous contacter</a>
+        <a href="#contact" class="btn btn-default btn-xl page-scroll" itemprop="hasMenu">Nous contacter</a>
       </div>
     </div>
   </div>
+  <meta itemprop="servesCuisine" content="Cuisine espagnole, Cuisine française">
+  <meta itemprop="areaServed" content="Béziers, Occitanie">
 </section>

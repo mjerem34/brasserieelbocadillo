@@ -1,36 +1,28 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-              <img src="img/logo.svg" class="img-responsive" alt="El Bocadillo" style="height: 60px;">
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">Nos services</a>
-                </li>
-                <!-- <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li> -->
-                <li>
-                    <a class="page-scroll" href="#menu">Menu</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Nous contacter</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top" itemprop="url">
+        <img src="img/logo.svg" class="img-responsive" alt="Logo Brasserie El Bocadillo - Cuisine espagnole et française à Béziers" style="height: 60px;" itemprop="logo">
+      </a>
     </div>
-    <!-- /.container-fluid -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <a class="page-scroll" href="#about" itemprop="url"><span itemprop="name">Nos services</span></a>
+        </li>
+        <li itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <a class="page-scroll" href="#menu" itemprop="url"><span itemprop="name">Menu</span></a>
+        </li>
+        <li itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <a class="page-scroll" href="#contact" itemprop="url"><span itemprop="name">Nous contacter</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

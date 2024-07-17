@@ -1,44 +1,44 @@
-<section id="contact">
+<section id="contact" itemscope itemtype="http://schema.org/Restaurant">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading">Nous contacter</h2>
+        <h2 class="section-heading" itemprop="name">Contactez la Brasserie El Bocadillo à Béziers</h2>
         <hr class="primary">
-        <p>Estelle et Philippe insufflent leur passion et expertise dans chaque assiette servie à la Brasserie El Bocadillo. Ce duo dynamique transforme les repas en moments d'exception, où la convivialité rencontre la finesse culinaire. Découvrez à la Brasserie El Bocadillo, un lieu où chaque détail raconte une histoire de goût et d'innovation.</p>
+        <p itemprop="description">Estelle et Philippe insufflent leur passion et expertise dans chaque assiette servie à la Brasserie El Bocadillo. Ce duo dynamique transforme les repas en moments d'exception, où la convivialité rencontre la finesse culinaire. Découvrez à la Brasserie El Bocadillo, un lieu où chaque détail raconte une histoire de goût et d'innovation au cœur de Béziers.</p>
         <hr class="primary">
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4 text-center">
-        <p>Horaires</p>
-        <p>Lun-Sam : 9h-17h</p>
+        <p><strong>Horaires d'ouverture</strong></p>
+        <p itemprop="openingHours" content="Mo-Sa 09:00-17:00">Lun-Sam : 9h-17h</p>
       </div>
       <div class="col-lg-4 text-center">
-        <a href="https://maps.app.goo.gl/Zy285CzRNYu5qfTA6" style="display: flex; justify-content: center;">
-          <img src="img/map.png" class="img-responsive" alt="El Bocadillo" style="height: 200px">
+        <a href="https://maps.app.goo.gl/Zy285CzRNYu5qfTA6" style="display: flex; justify-content: center;" itemprop="hasMap">
+          <img src="img/map.png" class="img-responsive" alt="Carte de localisation de la Brasserie El Bocadillo à Béziers" style="height: 200px" loading="lazy">
         </a>
       </div>
       <div class="col-lg-4 text-center">
-        <p>16 Rue du Terret</p>
-        <p>34500 Béziers</p>
+        <p itemprop="streetAddress">16 Rue du Terret</p>
+        <p><span itemprop="postalCode">34500</span> <span itemprop="addressLocality">Béziers</span></p>
       </div>
     </div>
     <hr class="primary">
     <div class="row">
       <div class="col-lg-4 text-center">
-        <a href="https://instagram.com/{{ site.instagram_username }}">
+        <a href="https://instagram.com/{{ site.instagram_username }}" itemprop="sameAs">
           <i class="fa-brands fa-instagram fa-3x wow bounceIn" data-wow-delay=".1s"></i>
           <p>Instagram</p>
         </a>
       </div>
       <div class="col-lg-4 text-center">
-        <a href="mailto:{{ site.email }}?subject=Réservation">
+        <a href="mailto:{{ site.email }}?subject=Réservation" itemprop="email">
           <i class="fa-regular fa-envelope fa-3x wow bounceIn" data-wow-delay=".1s"></i>
           <p>{{ site.email }}</p>
         </a>
       </div>
       <div class="col-lg-4 text-center">
-        <a href="tel:{{ site.phone }}">
+        <a href="tel:{{ site.phone }}" itemprop="telephone">
           <i class="fa-solid fa-phone fa-3x wow bounceIn" data-wow-delay=".1s"></i>
           <p>{{ site.phone }}</p>
         </a>
@@ -47,7 +47,7 @@
     <hr class="primary">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Retrouvez nous aussi à Saint-Thibéry</h2>
+        <h2>Découvrez notre autre établissement à Saint-Thibéry</h2>
         <br>
         <a href="https://differancesaintthibery.fr/" rel="noopener" title="Visitez notre brasserie La DifférAnce à Saint-Thibéry" class="btn btn-primary btn-xl">
           <i class="fa-solid fa-utensils fa-fw"></i> Brasserie La DifférAnce
@@ -55,4 +55,6 @@
       </div>
     </div>
   </div>
+  <meta itemprop="servesCuisine" content="Française, Espagnole, Brasserie">
+  <meta itemprop="priceRange" content="€€">
 </section>
